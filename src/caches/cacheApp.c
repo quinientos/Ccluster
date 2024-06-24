@@ -10,6 +10,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "flint/fmpz_poly.h"
 #include "cacheApp.h"
 
 void cacheApp_init ( cacheApp_t cache, void(*getApproximation)(compApp_poly_t, slong) ) {

@@ -623,19 +623,19 @@ fi
 
 if [ -z "$CFLAGS" ]; then
    if [ "$OS" = "MINGW64" ]; then
-      CFLAGS="-std=c99 -O2 -funroll-loops -g $POPCNT_FLAG $ABI_FLAG"
+      CFLAGS="-std=c11 -O2 -funroll-loops -g $POPCNT_FLAG $ABI_FLAG"
    elif [ "$OS" = "CYGWIN64" ]; then
-      CFLAGS="-std=c99 -O2 -funroll-loops -g -D _WIN64 $POPCNT_FLAG $ABI_FLAG"
+      CFLAGS="-std=c11 -O2 -funroll-loops -g -D _WIN64 $POPCNT_FLAG $ABI_FLAG"
    else
 #       CFLAGS="-ansi -pedantic -Wall -O2 -funroll-loops -g $POPCNT_FLAG $ABI_FLAG"
-      CFLAGS="-std=c99 -pedantic -Wall -O2 -funroll-loops -g $POPCNT_FLAG $ABI_FLAG"
+      CFLAGS="-std=c11 -pedantic -Wall -O2 -funroll-loops -g $POPCNT_FLAG $ABI_FLAG"
    fi
 fi
 
 #this is needed on PPC G5 and does not hurt on other OS Xes
 
 if [ "$KERNEL" = Darwin ]; then
-   CFLAGS="-fno-common $CFLAGS"
+   CFLAGS="-fcommon $CFLAGS"
 fi
 
 #PIC flag

@@ -9,6 +9,7 @@
 /*  (at your option) any later version.  See <http://www.gnu.org/licenses/>.  */
 /* ************************************************************************** */
 
+#include "flint/arb_poly.h"
 #include "app_rat_poly.h"
 
 void compApp_poly_root_bound_fujiwara(realRat_t bound, compApp_poly_t poly){

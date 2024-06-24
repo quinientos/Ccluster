@@ -18,7 +18,7 @@
 #define FPRI_INLINE static __inline__
 #endif
 
-#include "arb_poly.h"
+#include "flint/arb_poly.h"
 #include "fpri.h"
 
 #ifdef __cplusplus

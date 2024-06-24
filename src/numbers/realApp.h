@@ -19,8 +19,8 @@
 #endif
 
 #include <math.h>
-#include "arf.h"
-#include "arb.h"
+#include "flint/arf.h"
+#include "flint/arb.h"
 #include "flint/fmpz.h"
 #include "flint/fmpq.h"
 

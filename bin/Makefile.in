@@ -1,6 +1,6 @@
 INCLUDE_PATH = $(INCS) -I../src
 LIBRARY_PATH = -L.. $(LIBS)
-LIBRARY_FLAG = -lgmp -lflint -larb -lccluster -lm
+LIBRARY_FLAG = -lgmp -lflint -lccluster -lm
 
 QUIET_CC  = @echo '   ' CC  ' ' $@;
 
@@ -19,8 +19,7 @@ build: ccluster\
        cauchy\
        cauchy_mandelbrot\
        cauchy_runnels\
-       cauchy_nested\
-       cauchy_mignotte
+       cauchy_nested
 
 # TESTING VARIABLES
 degree=64
@@ -116,8 +115,3 @@ cauchy_nested: cauchy_nested.o
 	    	-o $@ $< $(INCLUDE_PATH) \
 	    	$(LIBRARY_PATH) $(LIBRARY_FLAG) \
 	    	
-cauchy_mignotte: cauchy_mignotte.o
-# 	@echo "Building $@"
-	$(QUIET_CC) $(CC) $(CFLAGS) \
-	    	-o $@ $< $(INCLUDE_PATH) \
-	    	$(LIBRARY_PATH) $(LIBRARY_FLAG) \

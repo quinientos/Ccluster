@@ -18,7 +18,7 @@
 #define FPRI_INLINE static __inline__
 #endif
 
-#include "acb.h"
+#include "flint/acb.h"
 #include "fpri.h"
 
 

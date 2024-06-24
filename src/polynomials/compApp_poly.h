@@ -18,7 +18,7 @@
 #define POLYNOMIALS_INLINE static __inline__
 #endif
 
-#include "acb_poly.h"
+#include "flint/acb_poly.h"
 #include "base/base.h"
 #include "numbers/compApp.h"
 #include "polynomials/realApp_poly.h"

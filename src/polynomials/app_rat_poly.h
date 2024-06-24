@@ -18,7 +18,7 @@
 #define POLYNOMIALS_INLINE static __inline__
 #endif
 
-#include "mag.h"
+#include "flint/mag.h"
 #include "numbers/app_rat.h"
 #include "polynomials/realRat_poly.h"
 #include "polynomials/compRat_poly.h"

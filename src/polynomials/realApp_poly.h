@@ -18,7 +18,7 @@
 #define POLYNOMIALS_INLINE static __inline__
 #endif
 
-#include "arb_poly.h"
+#include "flint/arb_poly.h"
 #include "base/base.h"
 #include "numbers/realApp.h"
 

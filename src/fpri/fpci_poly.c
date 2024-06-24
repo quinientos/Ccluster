@@ -10,6 +10,7 @@
 /* ************************************************************************** */
 
 #include "fpci_poly.h"
+#include "flint/ulong_extras.h"
 
 /* Memory management */
 void fpci_poly_init(fpci_poly_t poly){

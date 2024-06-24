@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <fenv.h>       /* fesetround, FE_* */
-#include "arb.h"
+#include "flint/arb.h"
 #include "flint/fmpq.h"
 
 #define FPRI_MIN(A,B) (A<=B? A : B)

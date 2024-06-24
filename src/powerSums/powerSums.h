@@ -20,7 +20,7 @@
 #include "caches/cacheApp.h"
 #include "metadatas/metadatas.h"
 
-#include "acb_poly.h"
+#include "flint/acb_poly.h"
 
 #ifdef __cplusplus
 extern "C" {

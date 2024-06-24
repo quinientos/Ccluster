@@ -18,7 +18,7 @@
 #define NUMBERS_INLINE static __inline__
 #endif
 
-#include "acb.h"
+#include "flint/acb.h"
 #include "numbers/realApp.h"
 
 #include "flint/fmpq.h"

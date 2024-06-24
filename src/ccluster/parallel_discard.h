@@ -33,10 +33,13 @@
 extern "C" {
 #endif
     
-int parallel_discard_done;
-pthread_mutex_t parallel_discard_mdone;
-pthread_cond_t  parallel_discard_cdone;
-
+//PER PULL REQUEST
+//int parallel_discard_done;
+//pthread_mutex_t parallel_discard_mdone;
+//pthread_cond_t  parallel_discard_cdone;
+extern int parallel_discard_done;
+extern pthread_mutex_t parallel_discard_mdone;
+extern pthread_cond_t  parallel_discard_cdone;
     
 typedef struct {
     slong prec;

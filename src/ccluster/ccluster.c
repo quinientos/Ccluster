@@ -35,7 +35,7 @@ slong ccluster_discard_compBox_list( compBox_list_t boxes,
     compBox_ptr btemp;
     
     /* For test */
-//     int nbSolsAlreadyfound = 0;
+//     int nbSolslreadyfound = 0;
 //     compBox_list_t ltempDetermined;
 //     compBox_list_init(ltempDetermined);
     /* End For test */
@@ -1085,10 +1085,12 @@ void connCmp_print_for_results_withOutput(FILE * f, const connCmp_t c, int outpu
 //     sprintf(temp, "%d", connCmp_nSols(c));
 //     for (int i = lens; i<=lensols; i++) sprintf(temp2, " ");
 //     fprintf(f, "--cluster with %s sols: ", temp);
-    if (connCmp_nSols(c) <= (10^6)-1)
-        fprintf(f, "#--cluster with %5d sols: ", connCmp_nSols(c));
-    else
-        fprintf(f, "#--cluster with %d sols: ", connCmp_nSols(c));
+    //PER PULL REQUEST
+    //if (connCmp_nSols(c) <= (10^6)-1)
+    //    fprintf(f, "#--cluster with %5d sols: ", connCmp_nSols(c));
+    //else
+    //    fprintf(f, "#--cluster with %d sols: ", connCmp_nSols(c));
+    fprintf(f, "#--cluster with %d sols: ", connCmp_nSols(c));
     
     connCmp_componentBox( containingBox, c, metadatas_initBref(meta));
     compBox_get_containing_dsk( containingDisk, containingBox);

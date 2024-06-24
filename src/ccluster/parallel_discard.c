@@ -15,6 +15,13 @@
 
 #ifdef CCLUSTER_HAVE_PTHREAD
 
+
+//SOO DEBUG
+int parallel_discard_done = 0;
+pthread_mutex_t parallel_discard_mdone = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t parallel_discard_cdone = PTHREAD_COND_INITIALIZER;
+
+
 void * _parallel_discard_list_worker( void * arg_ptr ){
     
     parallel_discard_list_arg_t * arg = (parallel_discard_list_arg_t *) arg_ptr;

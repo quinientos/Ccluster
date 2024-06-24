@@ -25,9 +25,9 @@
 
 #include "tstar/pelletTest.h"
 
-#include "acb_poly.h"
+#include "flint/acb_poly.h"
 
-#include <acb_dft.h>
+#include <flint/acb_dft.h>
 
 #ifdef __cplusplus
 extern "C" {
